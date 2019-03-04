@@ -1,0 +1,17 @@
+### macOS template
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+### intellij
+.idea
+
+#library
+#node_modules/
+#bower_components/
