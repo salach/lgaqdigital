@@ -1,0 +1,41 @@
+footer {
+  background-color: $primary_color;
+  height:60px;
+  .footer-content {
+    height: 100%;
+    align-items: center;
+    .copywrite,
+    .back-to-top {
+      font-weight: 300;
+      font-family: full-font(Muli-Regular);
+    }
+    .copywrite {
+      width:95%;
+      justify-self: flex-start;
+      p {
+        margin-bottom:0;
+      }
+    }
+    .back-to-top {
+      justify-self: flex-end;
+      width: 54%;
+      text-align: right;
+      a {
+        text-decoration: none;
+      }
+      .fa-arrow-up{
+        margin-left:5px;
+        font-size: em(15);
+        cursor:default;
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f062";
+          color:$white;
+          font-style: normal;
+        }
+      }
+
+    }
+  }
+
+}

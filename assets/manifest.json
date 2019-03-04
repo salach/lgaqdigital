@@ -1,0 +1,25 @@
+{
+    "dependencies": {
+    "main.js": {
+        "files": [
+            "scripts/main.js"
+        ],
+            "main": true
+    },
+    "main.css": {
+        "files": [
+            "styles/main.scss"
+        ],
+            "main": true
+    },
+    "jquery.js": {
+        "bower": ["jquery"]
+    },
+    "bootstrap.js": {
+        "files": "../node_modules/bootstrap/dist/js/bootstrap.js"
+    }
+    },
+    "config": {
+    "devUrl": "http://localhost:8095"
+}
+}

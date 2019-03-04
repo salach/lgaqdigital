@@ -1,0 +1,119 @@
+.hero-img,
+footer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero-img {
+  height: 300px;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  @include media-breakpoint-up(md) {
+    height:500px;
+  }
+}
+h1,h4 {
+  margin-bottom: 23px;
+}
+h1 {
+  text-align: center;
+  line-height:1.45;
+}
+h4 {
+  text-align: left;
+  line-height: 1.28;
+  text-transform: uppercase;
+}
+.flex-content {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .card {
+    width: 100%;
+    margin-bottom:10px;
+    @include media-breakpoint-up(sm) {
+      width: 49%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 32.6%;
+    }
+  }
+}
+.one-col-content {
+    .image {
+      height: 150px;
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position: center;
+    }
+    .card-block,
+    .card-body{
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+    }
+}
+.two-col-content{
+  .image{
+    order:2;
+    width:35%;
+    height:100%;
+  }
+  .card-body {
+    background:$secondary_color;
+    order:-1;
+    padding: 20px;
+    width:65%;
+  }
+}
+.links {
+  margin-top:30px;
+  @include media-breakpoint-up(sm) {
+    margin-top: 90px;
+  }
+  flex-direction: column;
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    flex-wrap:nowrap;
+  }
+  .left-content {
+    width:100%;
+    padding-bottom: 30px ;
+    @include media-breakpoint-up(sm) {
+      width: 32%;
+      padding-bottom: 100px;
+    }
+    a {
+      text-decoration: none;
+      color:$primary_color;
+      height:70px;
+      font-family: full-font(Muli-Semibold);
+      i.fas.fa-arrow-right {
+        font-family: "FontAwesome";
+        content: "\f061";
+        color:$primary_color;
+        font-weight: light;
+        font-style: normal;
+        width: 90%;
+        font-size: em(17);
+      }
+    }
+  }
+  .right-content {
+    width:100%;
+    @include media-breakpoint-up(sm) {
+      width:68%;
+    }
+    .content {
+      padding:0;
+      @include media-breakpoint-up(sm) {
+        padding:0 30px;
+      }
+      h1 {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+

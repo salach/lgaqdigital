@@ -1,0 +1,51 @@
+@include font-face(Satisfy-Regular, '../fonts/Satisfy-Regular', Regular, ttf);
+@include font-face(Muli-Bold, '../fonts/Muli-Bold', 700, Bold, ttf);
+@include font-face(Muli-SemiBold, '../fonts/Muli-SemiBold', 600, normal, ttf);
+@include font-face(Muli-Light, '../fonts/Muli-Light', 300, normal, ttf);
+@include font-face(Muli-Regular, '../fonts/Muli-Regular', 400, normal, ttf);
+
+body {
+  font-size: 100%;
+  overflow-x: hidden;
+  margin:0;
+}
+.flex-container {
+  max-width: 1100px;
+  margin:0 auto;
+  padding: 20px !important;
+  @include media-breakpoint-up(sm) {
+    padding: 0.5rem
+  }
+}
+h1,h2 {
+  font-family: full-font(Satisfy-Regular);
+}
+h1 {
+  font-size: em(36);
+  @include media-breakpoint-up(sm) {
+    font-size: em(42);
+  }
+  font-weight: normal;
+  color:$secondary_color;
+}
+
+h2 {
+  font-size: em(32);
+}
+h3 {
+  font-family: full-font(Muli-SemiBold);
+  font-size: em(22);
+}
+h4 {
+  font-family: full-font(Muli-Bold);
+  font-size: em(18);
+}
+p {
+  font-family: full-font(Muli-Light);
+  font-size: em(14);
+  line-height: 1.57;
+}
+.copywrite {
+  font-family: full-font(Muli-Regular);
+  font-size: em(15);
+}

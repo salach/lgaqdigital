@@ -1,0 +1,21 @@
+{
+  "name": "lgaq-digital",
+  "description": "This is a test work for lgaq digital",
+  "main": "index.js",
+  "authors": [
+    "Salina Acharya"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
